@@ -244,16 +244,21 @@
         <span>MojiPair</span>
       </div>
       <h1>Privacy Policy</h1>
-      <p class="effective-date">Effective and last updated: August 25, 2026</p>
+      <p class="effective-date">Last updated: October 28, 2026 (MojiPair 1.1.0)</p>
     </div>
   </header>
 
   <main>
     <p class="summary">
-      MojiPair stores game progress and preferences on your device. If you use the
-      global leaderboard, we send a pseudonymous player ID, your chosen emoji name,
-      your best score, and an update time to Google Firebase. The app also uses
+      MojiPair stores game progress and preferences on your device. A qualifying
+      Classic high score is submitted automatically to the global leaderboard,
+      with a pseudonymous player ID, your emoji name, your best score, and an
+      update time sent to Google Firebase. The app also uses
       Google Mobile Ads, which may process device and advertising data.
+      MojiPair requests only non-personalized ads. This does not mean that
+      Google processes no personal or device data. Advertising
+      requests are not made until the app has an age-category choice and any
+      Google consent flow required for the user's region is complete.
     </p>
 
     <section aria-labelledby="scope">
@@ -285,12 +290,22 @@
             </tr>
             <tr>
               <td>Game and preference data</td>
-              <td>Local high scores, challenge progress, lives, settings, tutorial state, age category choice, ad-personalization choice, and the random player ID</td>
+              <td>Local high scores, challenge progress, lives, stickers and shiny upgrades, collection stamps, tutorial state, settings, age category choice, Google consent status, and the random player ID</td>
               <td>On your device</td>
             </tr>
             <tr>
+              <td>Local reminder data</td>
+              <td>Reminder preference, permission-prompt history, completed-round count, last-played time, and scheduled or due reminder times. Your operating system handles notification permission and delivery.</td>
+              <td>On your device; no push token or remote reminder service is used by MojiPair</td>
+            </tr>
+            <tr>
+              <td>Support correspondence</td>
+              <td>Your email address and the information you choose to send when requesting support, access, or deletion. Please send only what is needed to handle the request.</td>
+              <td>Our support inbox and email service provider</td>
+            </tr>
+            <tr>
               <td>Advertising and technical data</td>
-              <td>Google Mobile Ads may process device identifiers, advertising identifiers, IP address, ad interactions, diagnostics, and similar technical data, depending on your device, region, consent choices, and Google settings</td>
+              <td>Google Mobile Ads may process device information, IP address, ad interactions, diagnostics, and similar technical data to provide non-personalized ads, depending on your device, region, consent choices, and Google settings</td>
               <td>Processed by Google and its advertising partners</td>
             </tr>
           </tbody>
@@ -301,6 +316,9 @@
         and saved on your device. It is not created from your name, email address,
         contacts, or hardware identifier. We do not require an account, legal name,
         email address, phone number, or precise location to play.
+        A persistent pseudonymous identifier is not necessarily anonymous or
+        exempt from privacy law. MojiPair does not send its gameplay analytics
+        events to a production analytics service in this release.
       </p>
     </section>
 
@@ -312,6 +330,8 @@
         <li>Keep one leaderboard record per player and update it when a higher score is submitted.</li>
         <li>Show, measure, secure, and improve advertising.</li>
         <li>Prevent spam, abuse, fraud, and technical failures.</li>
+        <li>Schedule optional on-device reminders about decks, streaks, collections, lives, and challenges.</li>
+        <li>Respond to support, privacy, and parental requests.</li>
         <li>Comply with legal obligations and enforce our rights.</li>
       </ul>
     </section>
@@ -320,7 +340,10 @@
       <h2 id="visibility">4. Leaderboard Visibility</h2>
       <p>
         Your chosen emoji display name and best score are visible to other MojiPair
-        players on the global leaderboard. Do not choose a display name that reveals
+        players on the global leaderboard. Qualifying Classic high scores are
+        uploaded automatically, including when Under 13 is selected; there is no
+        separate leaderboard opt-in in this release. Zen does not submit scores.
+        Do not choose a display name that reveals
         personal information. The pseudonymous player ID and update time are stored
         with the leaderboard record for operation of the service but are not intended
         to be shown as part of your public leaderboard entry.
@@ -337,8 +360,9 @@
           <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy and Security information</a>.
         </li>
         <li>
-          <strong>Google Mobile Ads</strong> provides banner, interstitial, and
-          rewarded ads. See
+          <strong>Google Mobile Ads and Google's User Messaging Platform</strong>
+          provide banner, interstitial, and rewarded ads and, where required,
+          collect and store your advertising consent choices. See
           <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google's Privacy Policy</a>
           and
           <a href="https://policies.google.com/technologies/ads" rel="noopener noreferrer">How Google uses information for advertising</a>.
@@ -354,7 +378,10 @@
     <section aria-labelledby="choices">
       <h2 id="choices">6. Your Choices</h2>
       <ul>
-        <li><strong>Ad personalization:</strong> In the app's Ads &amp; Privacy settings, you can choose personalized or non-personalized ads. Selecting under 13 forces non-personalized ad requests.</li>
+        <li><strong>Advertising privacy:</strong> MojiPair requests only non-personalized ads. For users aged 13 or older, Google may also show a region-specific consent form before any ad request. Where that form applies, its consent result also controls Google's advertising processing.</li>
+        <li><strong>Google privacy choices:</strong> For players aged 13 or older, the app provides a Google privacy choices button in Options &gt; Ads / Privacy / Age. Availability of Google's form depends on region and Google's configuration.</li>
+        <li><strong>Reminders:</strong> Notifications are optional. The app asks before requesting iOS notification permission, normally after two completed rounds, or when you enable Reminders in Options. You can decline without losing access to gameplay. Turn Reminders off in Options to cancel pending reminders, or disable notification permission in iOS Settings. The planner limits reminders to one per day and three in a rolling seven days, between 10:00 and 20:00 using the device's local time when planned. Travel or clock changes may affect delivery until the app replans.</li>
+        <li><strong>Sharing:</strong> Sharing a result or postcard opens your device's share sheet only when you choose Share. The destination app or service handles the information you send under its own privacy terms.</li>
         <li><strong>Device advertising controls:</strong> You can limit or reset advertising identifiers through your device settings where available.</li>
         <li><strong>Local data:</strong> You can remove locally stored information by clearing the app's data or uninstalling it, subject to your device platform's behavior.</li>
         <li><strong>Leaderboard data:</strong> Clearing local data or uninstalling the app does not automatically delete a leaderboard record stored in Firebase. Contact us to request access to or deletion of that record.</li>
@@ -364,6 +391,8 @@
         delete, restrict, or object to certain processing, or to withdraw consent.
         We may need information such as your emoji display name and score to locate
         a leaderboard record and may ask for additional verification.
+        Email <a href="mailto:mattmadeapps@gmail.com">mattmadeapps@gmail.com</a>
+        privately; do not post a child's information on a public issue tracker.
       </p>
     </section>
 
@@ -373,6 +402,10 @@
         Local data remains on your device until it is cleared, overwritten, or the
         app is removed. A leaderboard record remains until it is replaced or updated,
         you successfully request deletion, or the leaderboard service is retired.
+        Updating a score does not delete the player's record. There is currently
+        no automatic expiry period for leaderboard records.
+        Support correspondence is retained as needed to handle and document
+        requests and meet applicable legal obligations.
         Service providers may retain limited backups, security logs, or records as
         described in their policies or as required by law.
       </p>
@@ -382,14 +415,25 @@
       <h2 id="children">8. Children's Privacy</h2>
       <p>
         MojiPair asks for an age-category choice to configure advertising. If the
-        under-13 option is selected, the app requests non-personalized ads. However,
-        non-personalized ads may still use limited data for functions such as ad
-        delivery, frequency capping, fraud prevention, and reporting.
+        under-13 option is selected, the app configures Google Mobile Ads for
+        child-directed treatment and users under the age of consent, limits ad
+        content to Google's G rating, and requests non-personalized ads. All other
+        users also receive non-personalized ad requests. These ads may still use
+        limited data for functions such as ad delivery, frequency capping, fraud
+        prevention, and reporting.
+        Selecting Under 13 is not verifiable parental consent. The app does not
+        include an in-app parental-consent verification flow. Google's child-directed
+        ad settings do not by themselves establish compliance with COPPA or other
+        children's privacy laws.
       </p>
       <p>
         The global leaderboard uses only a pseudonymous random ID, an emoji display
         name, a best score, and an update time. Parents or guardians who believe a
         child submitted leaderboard data may contact us to request its deletion.
+        Contact <a href="mailto:mattmadeapps@gmail.com">mattmadeapps@gmail.com</a>
+        privately with questions about a child's data or to request review or
+        deletion. Do not send a child's legal name, date of birth, or identity
+        documents in an initial request.
       </p>
     </section>
 
@@ -416,8 +460,9 @@
     <section aria-labelledby="contact">
       <h2 id="contact">11. Contact Us</h2>
       <p>
-        For privacy questions or requests, use the contact method listed on the
-        <a href="https://github.com/mattmadeapps" rel="noopener noreferrer">Matt Made Apps GitHub profile</a>.
+        MojiPair is provided by Matt Made Apps. For privacy, support, or parental
+        requests, email
+        <a href="mailto:mattmadeapps@gmail.com">mattmadeapps@gmail.com</a>.
         Please do not include sensitive personal information in a public GitHub post.
       </p>
       <p class="note">
